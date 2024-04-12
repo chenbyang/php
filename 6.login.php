@@ -6,7 +6,7 @@
    #mysqli_fetch_array() //從查詢出來的資料一筆一筆抓出來
    $login=FALSE; //將$login設定為布林值FALSE
    while ($row=mysqli_fetch_array($result)) { //創建一個while迴圈無法抓取到資料後就會停止
-     if (($_POST["id"]==$row["id"]) && ($_POST["pwd"]==$row["pwd"])) {
+     if (($_POST["id"]==$row["id"]) && ($_POST["pwd"]==$row["pwd"])) { //假如輸入的id和資料庫的id一樣 && 輸入的pwd和資料庫的pwd一樣
        $login=TRUE; //如果結果為True會將$login的布林值設定為TRUE
      }
    } 
