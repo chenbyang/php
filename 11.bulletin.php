@@ -25,7 +25,7 @@
             echo $row["time"];
             echo "</td></tr>";
         }
-        echo "</table>";
+        echo "</table>"; //表格的結尾
     
     }
 
