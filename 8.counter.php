@@ -1,6 +1,7 @@
 <?php
-    session_start();
-    if (!isset($_SESSION["counter"]))
+    session_start(); //開始一個SESSION
+
+    if (!isset($_SESSION["counter"])) //如果沒有一個SESSION叫做
         $_SESSION["counter"]=1;
     else
         $_SESSION["counter"]++;
