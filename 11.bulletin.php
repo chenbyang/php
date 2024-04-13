@@ -13,7 +13,8 @@
         echo "<table border=2><tr><td></td><td>佈告編號</td><td>佈告類別</td><td>標題</td><td>佈告內容</td><td>發佈時間</td></tr>";  //顯示一個表格邊框像素為2，顯示表格每格按照順序顯示佈告編號到發佈時間
         while ($row=mysqli_fetch_array($result)){ //創建一個while迴圈無法抓取到資料後就會停止
             echo "<tr><td><a href=26.bulletin_edit_form.php?bid={$row["bid"]}>修改</a>
-            <a href=28.bulletin_delete.php?bid={$row["bid"]}>刪除</a></td><td>";
+            <a href=28.bulletin_delete.php?bid={$row["bid"]}>刪除</a></td><td>"; 
+            //創建一個 修改、刪除 的超連結 會跳至26.bulletin_edit_form.php?bid={$row["bid"]} 、28.bulletin_delete.php?bid={$row["bid"]}。 {$row["bid"]}會根據點的格子不同而改變
             echo $row["bid"];
             echo "</td><td>";
             echo $row["type"];
