@@ -6,7 +6,7 @@
     while ($row=mysqli_fetch_array($result)){
         echo "<tr><td>";
         echo $row["bid"];
-        echo "</td><td>";
+        echo "</td><td>";//
         echo $row["type"];
         echo "</td><td>"; 
         echo $row["title"];
