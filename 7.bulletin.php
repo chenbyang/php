@@ -14,7 +14,7 @@
         echo $row["content"]; //顯示資料表裡content的資料
         echo "</td><td>";
         echo $row["time"]; //顯示資料表裡time的資料
-        echo "</td></tr>";
+        echo "</td></tr>"; // </td>前一個表格的結束 </tr>結束一個表格行
     }
     echo "</table>" //表格的結尾
 ?>
