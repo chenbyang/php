@@ -243,7 +243,7 @@
                   <!---跳出登入畫面-->
                   <label onclick="document.getElementById('login').style.display='block'">登入</label>
                   <div id="login" class="modal">
-                    <span onclick="document.getElementById('login').style.display='none'">&times;</span>
+                    <span onclick="document.getElementById('login').style.display='none'">&times; 管理系統登入</span>
                     <form method=post action="10.login.php">
                         帳號：<input type=text name="id"><br />
                         密碼：<input type=password name="pwd"><p></p>
@@ -288,7 +288,9 @@
                     echo "<tr><td>";
                     echo $row["bid"];
                     echo "</td><td>";
-                    echo $row["type"];
+                    if ($row["type"]==1) echo "系上公告";  
+                    if ($row["type"]==2) echo "獲獎資訊"; 
+                    if ($row["type"]==3) echo "徵才資訊"; 
                     echo "</td><td>"; 
                     echo $row["title"];
                     echo "</td><td>";
