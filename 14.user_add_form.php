@@ -3,7 +3,7 @@
     <body>
 <?php        
     error_reporting(0);//關閉PHP 腳本中的錯誤報告。
-    session_start();
+    session_start();//啟動繪畫
     if (!$_SESSION["id"]) {
         echo "請登入帳號";
         echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
