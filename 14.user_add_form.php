@@ -2,7 +2,7 @@
     <head><title>新增使用者</title></head>
     <body>
 <?php        
-    error_reporting(0);
+    error_reporting(0);//關閉PHP 腳本中的錯誤報告。
     session_start();
     if (!$_SESSION["id"]) {
         echo "請登入帳號";
