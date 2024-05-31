@@ -14,7 +14,7 @@
                 帳號：<input type=text name=id><br> //帳號輸入欄名稱為id
                 密碼：<input type=text name=pwd><p></p> //密碼輸入欄名稱為pwd
                 <input type=submit value=新增> <input type=reset value=清除> //顯示新增和清除按鈕
-            </form> 表單結尾
+            </form> //表單結尾
         ";
     }
 ?>
